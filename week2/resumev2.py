@@ -21,4 +21,4 @@ total = height + weight
 print(f"ชื่อ: {name} | รหัส: {student_id}")
 print(f"ชั้นปี: {year}")
 print(f"ชื่อเล่น: {nickname}")
-print(f"สูง: {height} เมตร | น้ำหนัก: {weight} กิโลกรัม")
+print(f"สูง: {height} เมตร | น้ำหนัก: {weight} กิโลกรัม") 
