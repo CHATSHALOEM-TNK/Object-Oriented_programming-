@@ -14,4 +14,7 @@ weight = float(input("กรุณาป้อนน้ำหนัก (กิ�
 print(weight)
 total = height + weight
 
-print("ชื่อ" + name + "รหัส" + student_id + "ชั้นปี" + year + "ชื่อเล่น" + nickname + "สูง"  + str (height) + "น้ำหนัก" + str (weight) )
+print("ชื่อ" + name + "รหัส" + student_id)
+print("ชั้นปี" + year) 
+print("ชื่อเล่น" + nickname)
+print("สูง"  + str (height) + "น้ำหนัก" + str (weight))
