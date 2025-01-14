@@ -18,9 +18,29 @@ class Product:
             print("ไม่สามารถลดสินค้าได้")
     def checkProduct(self):
         return f"ชื่อ : {self.name}\nราคาสินค้า : {self.__price}\nจำนวนสินค้า : {self.__stock}"
-person1 = Product("i tui", 1000, 5)
-person1.updatePrice(1300)  
-person1.addStock(5)       
-person1.discountStock(4)  
-print(person1.checkProduct())  
+    
+class Phone(Product):
+    def __init__(self, name, price, stock, brand):
+        super().__init__(name, price, stock)
+        self.brand = brand
+    def checkProduct(self):
+        return f"ค่าย {self.brand} {super().checkProduct()}"
+class notebook(Product):
+    def __init__(self, name, price, stock, brand):
+        super().__init__(name, price, stock)
+        self.brand = brand
+    def checkProduct(self):
+        return f"ค่าย {self.brand} {super().checkProduct()}"
+class Clothes(Product):
+    def __init__(self, name, price, stock, brand):
+        super().__init__(name, price, stock)
+        self.brand = brand
+    def checkProduct(self):
+        return f"ค่าย {self.brand} {super().checkProduct()}"
+
+
+phone1 = Phone("samsung a 23 5g", 5000,10,"samsung")
+notebook1 = notebook ("acer nito v 15",23000,10,"acer")
+Clothes1 = Clothes ("adidas original",4000,10,"adidas")
+print(Clothes1.checkProduct())  
 
